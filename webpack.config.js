@@ -37,7 +37,7 @@ module.exports = (env, argv) => {
     output: {
       path: path.resolve(__dirname, 'build'),
       filename: 'bundle.js',
-      // publicPath: isProd ? '/mp0/' : '/',
+      publicPath: isProd ? '/mp0/' : '/',
       assetModuleFilename: 'assets/[name][contenthash][ext][query]',
     },
   };
